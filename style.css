@@ -62,7 +62,7 @@ body {
     flex-direction: column;
     justify-content: center;
     min-height: 350px;
-    background: var(--main-purple-color) url(IMG_SRC) no-repeat center / cover;
+    background: var(--main-purple-color) url() no-repeat center / cover;
     background-blend-mode: luminosity;
     color: var(--main-white-color);
   }

@@ -8,7 +8,6 @@
     <title>Benalloway</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpgk.com/ionicons@4.4.6/dist/css/ionicons.min.css">
 </head>
 
 <body>
@@ -18,9 +17,6 @@
                 <h2 class="logo">
                     BENALLOWAY
                 </h2>
-                <ul>
-                    <!-- list items here -->
-                </ul>
                 <button class="cta-contact">
                     get in touch
                 </button>
@@ -34,8 +30,7 @@
         </main>
 
         <footer class="page-footer">
-            <small>
-                <!-- content here -->
+            <small id="trademark">
             </small>
             <ul>
                 <!-- list items here -->
@@ -44,4 +39,11 @@
     </div>
 </body>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        var today = new Date();
+        var year = today.getFullYear();
+        document.getElementById("trademark").innerHTML = "&copy; Benjamin Alloway " + year.toString();
+    });
+</script>
 </html>
