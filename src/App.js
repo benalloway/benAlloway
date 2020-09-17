@@ -1,13 +1,9 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+
+import { Router } from "./Router";
 
 function App() {
-  return (
-    <div className="w-1/2">
-      <div className="w-1/2 mx-auto">Hello World</div>
-    </div>
-  );
+    return <Router />;
 }
 
 export default App;

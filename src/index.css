@@ -1,15 +1,60 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto Condensed", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-size: 18px;
+    font-weight: 300;
+    background-color: rgb(248, 242, 231);
+}
+
+.tracking-custom {
+    letter-spacing: 0.135556rem;
+}
+
+.nav-dot::after {
+    background-color: rgb(134, 32, 65);
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 6px;
+    left: 50%;
+    pointer-events: none;
+    position: absolute;
+    top: calc(100% + 0.3rem);
+    transform: translateX(-50%) scale(0);
+    transition: transform 0.35s cubic-bezier(0.445, 0.05, 0.55, 0.95) 0s;
+    width: 6px;
+}
+
+.nav-dot:hover {
+    -webkit-tap-highlight-color: transparent;
+    outline: 0px;
+}
+
+.nav-dot:hover::after {
+    transform: translateX(-50%);
+}
+
+.nav-dot-active::after {
+    transform: translateX(-50%);
+}
+
+.btn {
+    background-color: rgb(248, 242, 231);
+    border: 1px solid rgb(134, 32, 65);
+    border-radius: 18px;
+    cursor: pointer;
+    pointer-events: all;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }
 
 @import "tailwindcss/base";
