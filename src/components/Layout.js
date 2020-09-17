@@ -16,9 +16,7 @@ function Layout({ children }) {
                 </nav>
 
                 {/* LOGO */}
-                <div>
-                    <svg></svg>
-                </div>
+                <div>Ben Alloway</div>
 
                 {/* LOCATION / CONTACT */}
                 <div>
